@@ -1,0 +1,42 @@
+//----------------------------------------------
+//  Text-based inputs
+//----------------------------------------------
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: $pad-xs;
+  font-family: $font-sans;
+  font-size: $font-sm;
+  font-weight: 600;
+  color: $color-grey-mid;
+  background: $color-white;
+  border: 1px solid #ddd;
+  border-radius: $base-border-radius;
+  box-shadow: none;
+  outline: 0;
+  transition: all .25s ease-in;
+  -webkit-appearance: none;
+
+  &:focus {
+    border-color: $color-alpha !important;
+    transition: 0.4s ease;
+    box-shadow: 0 0 5px 0 rgba($color-beta, 0.2);
+  }
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #e6ecf0;
+    outline: 0;
+    height: 100px;
+    width: 100%;
+    padding: $pad-sm $pad-xs;
+}
+
+label {
+  display: block;
+  font-size: $font-sm;
+}

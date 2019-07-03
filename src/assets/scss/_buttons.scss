@@ -1,0 +1,59 @@
+//----------------------------------------------
+//  Button Theme / Reset
+//----------------------------------------------
+$btn-pad: 1em 2.75em 1.05em;
+$btn-pad-lg: 0.9em 4.5em;
+$btn-pad-sm: 1.5em 2em 1.45em;
+
+@mixin btn-theme {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  @include font-uppercase;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  backface-visibility: hidden;
+}
+
+
+//----------------------------------------------
+//  Basic Button
+//----------------------------------------------
+.btn{
+  @include btn-theme;
+  padding: 1.25rem 5em 1.15rem;
+  color: $color-white;
+  background-color: $color-alpha;
+  border: 1px solid;
+  border-color: $color-alpha;
+  border-radius: $base-border-radius;
+  transition: background-color 0.7s ease, color 0.7s ease, border-color 0.7s ease;
+
+  &:hover, &:focus{
+    color: $color-white;
+    background-color: $color-beta;
+    border-color: $color-beta;
+    transition: background-color 0.7s ease, color 0.7s ease, border-color 0.7s ease;
+  }
+
+	&:disabled {
+		opacity: 0.3;
+
+		&:hover {
+			background: $color-alpha;
+		}
+	}
+
+	&.is-block {
+		display: block;
+		width: 100%;
+	}
+}

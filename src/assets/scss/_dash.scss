@@ -1,0 +1,25 @@
+.dash {
+  &__grid {
+    @media (min-width: $mq-med) {
+      display: flex;
+      margin: 0 -2em;
+    }
+  }
+
+  &__aside {
+    @include flex-col(100%, 40%);
+    padding: 2em;
+  }
+  &__main {
+    @include flex-col(100%, 60%);
+    padding: 2em;
+  }
+}
+
+.has-header-offset {
+  margin-top: $header-height-sm;
+
+  @media (min-width: $mq-med) {
+    margin-top: $header-height-lg;
+  }
+}

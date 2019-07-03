@@ -1,0 +1,88 @@
+$font-sans: 'circular', Helvetica, sans-serif;
+
+//----------------------------------------------
+// Fonts: Size variables
+//----------------------------------------------
+$font-xxxl: 3em;
+$font-xxl: 1.9em;
+$font-xl: 1.7em;
+$font-lg: 1.5em;
+$font-med: 1.3em;
+$font-lead: 1.1em;
+$font-base: 0.95em;
+$font-sm: 0.8em;
+$font-xs: 0.6em;
+$font-xxs: 0.7rem;
+
+//----------------------------------------------
+// Media Queries
+//----------------------------------------------
+// Smallest phone
+$mq-xsmall: 22em;
+// Phone
+$mq-sm: 32em;
+// Tablet
+$mq-med: 59em;
+// Laptop
+$mq-lg: 78em;
+// Past laptop
+$mq-xl: 91em;
+// Mid-size monitor
+$mq-xxl: 115em;
+// Thunderbold goes to 157em
+$mq-xxxl: 130em;
+
+
+
+//----------------------------------------------
+// Grid
+//----------------------------------------------
+$grid-width:          92%;
+$grid-max-width:      60em;
+$grid-max-width-sm:   41em;
+$grid-width-med:      82%;
+$grid-width-lg:       95%;
+$grid-max-width-lg:   76em;
+$grid-max-width-xl:   90%;
+$grid-max-width-xxl:   95%;
+
+
+
+//----------------------------------------------
+// Spacings (pad/margin)
+//----------------------------------------------
+$pad-scale: 1em;
+$pad-xxs:   $pad-scale / 2;
+$pad-xs:    $pad-scale;
+$pad-sm:    $pad-xs + $pad-xs;
+$pad-med:   $pad-sm + $pad-xs;
+$pad:       $pad-sm + $pad-sm;
+$pad-lg:    $pad + $pad-sm;
+$pad-xl:    $pad + $pad;
+
+//----------------------------------------------
+// Header Heights
+//----------------------------------------------
+$header-height-lg: 6em;
+$header-height-sm: 4em;
+$header-height-xs: 4em;
+
+//----------------------------------------------
+// Colors
+//----------------------------------------------
+$color-alpha:       #0049ff;
+$color-beta:        #041a4e;
+$color-grey-dark:     #4f5f83;
+$color-grey-mid:      #5F5D5E;
+$color-grey:    #AFABAC;
+$color-grey-light: #f3f5f9;
+$color-grey-borders:  #e2e3e4;
+$color-white:       #fff;
+$color-light:       rgba($color-white, 0.4);
+$color-trans:       rgba(255,255,255,0);
+$color-warning:     #c43a31;
+$color-success:     #1ABC9C;
+$color-transparent: rgba(255,255,255,0);
+
+
+$base-border-radius: 4px;

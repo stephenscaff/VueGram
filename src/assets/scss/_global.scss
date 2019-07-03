@@ -1,0 +1,68 @@
+
+// colors
+$primary: #30A0EE;
+$error: #ef5777;
+$success: #1abc9c;
+$light: #F5F8FA;
+$medium: #657786;
+$dark: #34495E;
+$white: #fff;
+
+
+
+.col1,
+.col2 {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 1rem;
+
+	@media screen and (max-width: 742px) {
+
+	}
+}
+
+[v-cloak] {display: none}
+
+.loading {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba($dark, 0.4);
+	z-index: 9999;
+
+	p {
+		background: $white;
+		width: 150px;
+		text-align: center;
+		margin: 40vh auto 0;
+        padding: 40px 0;
+		border-radius: 3px;
+		box-shadow: 0 0 20px 0 rgba($dark, 0.5);
+	}
+}
+
+.error-msg {
+	margin-top: 1rem;
+	text-align: center;
+	p {
+		color: $error;
+		margin: 0;
+	}
+}
+
+
+
+// transitions
+.fade-enter-active {
+	transition: opacity 0.5s;
+}
+.fade-leave-active {
+	transition: opacity 0s;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}

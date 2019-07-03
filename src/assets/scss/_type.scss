@@ -1,0 +1,49 @@
+//----------------------------------------------
+// Typography
+//----------------------------------------------
+
+body {
+  font-family: $font-sans;
+  line-height:1.6;
+  color: $color-grey-dark;
+  background-color: $color-grey-light;
+}
+
+//----------------------------------------------
+// Fluid body sizing
+//----------------------------------------------
+body {
+  font-size: 102%;
+
+  @media (min-width: $mq-med) {
+    font-size: calc(0.1vw + 100%);
+  }
+  @media (min-width: $mq-xl) {
+    font-size: calc(0.2vw + 100%);
+  }
+  @media (min-width: $mq-xxl) {
+    font-size: calc(0.27vw + 100%);
+  }
+}
+
+
+
+//----------------------------------------------
+//  Typography : Headings Setup
+//----------------------------------------------
+h1,h2,h3,h4,h5{
+  font-family: $font-sans;
+  font-weight: 500;
+  color: $color-beta;
+}
+
+
+a {
+  color: $color-alpha;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $color-beta;
+  }
+}
